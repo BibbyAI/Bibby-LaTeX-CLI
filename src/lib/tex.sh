@@ -128,7 +128,8 @@ export PATH=\"$bin:\$PATH\""
   fi
   printf '\n%s\n' "$line" >> "$rc"
   ok "added TeX to PATH in $rc"
-  BIBBY_PATH_CHANGED=1
+  # Read by bibby-latex.sh after this file is sourced.
+  export BIBBY_PATH_CHANGED=1
 }
 
 # Make `latexmk` usable even if the distro skipped it.

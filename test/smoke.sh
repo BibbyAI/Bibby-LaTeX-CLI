@@ -4,7 +4,7 @@
 set -uo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
-cd "$ROOT"
+cd "$ROOT" || exit
 
 PASS=0; FAIL=0
 t() {
