@@ -60,8 +60,8 @@ ${C_BOLD}options${C_RESET}
   -h, --help                this
 
 ${C_BOLD}examples${C_RESET}
-  curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash
-  curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash -s -- --yes --profile=full
+  curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash
+  curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash -s -- --yes --profile=full
   bibby-latex --doctor
 EOF
 }

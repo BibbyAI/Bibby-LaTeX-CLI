@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 # cloud.sh - Colab / Kaggle / remote notebook setup.
 
-COLAB_ONE_LINER='!curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/cloud/bibby_cloud.py | python3 - --profile standard'
+COLAB_ONE_LINER='!curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/cloud/bibby_cloud.py | python3 - --profile standard'
 
 copy_clipboard() {
   local text="$1"

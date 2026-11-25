@@ -3,7 +3,7 @@
   bibby-latex for Windows. One command, working LaTeX + VS Code.
 
 .EXAMPLE
-  irm https://raw.githubusercontent.com/trybibby/bibby-latex/main/windows/install.ps1 | iex
+  irm https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/windows/install.ps1 | iex
 
 .EXAMPLE
   .\install.ps1 -Yes -Profile standard

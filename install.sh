@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # bibby-latex bootstrap
 #
-#   curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash
 #
 # Flags can be passed through after `-s --`:
 #
-#   curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash -s -- --yes --profile=standard
+#   curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash -s -- --yes --profile=standard
 #
 set -euo pipefail
 
-BIBBY_REPO="${BIBBY_REPO:-trybibby/bibby-latex}"
+BIBBY_REPO="${BIBBY_REPO:-BibbyAI/Bibby-LaTeX-CLI}"
 BIBBY_REF="${BIBBY_REF:-main}"
 BIBBY_HOME="${BIBBY_HOME:-$HOME/.bibby-latex}"
 

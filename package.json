@@ -34,11 +34,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trybibby/bibby-latex.git"
+    "url": "git+https://github.com/BibbyAI/Bibby-LaTeX-CLI.git"
   },
   "homepage": "https://trybibby.com",
   "bugs": {
-    "url": "https://github.com/trybibby/bibby-latex/issues"
+    "url": "https://github.com/BibbyAI/Bibby-LaTeX-CLI/issues"
   },
   "author": "Bibby",
   "license": "MIT",

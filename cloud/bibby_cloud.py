@@ -3,7 +3,7 @@
 
 One cell, in any notebook:
 
-    !curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/cloud/bibby_cloud.py | python3 - --profile standard
+    !curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/cloud/bibby_cloud.py | python3 - --profile standard
 
 Then, in Python:
 
@@ -47,7 +47,7 @@ APT_PACKAGES = {
 
 MARKER = "/tmp/.bibby_latex_installed"
 SELF_URL = (
-    "https://raw.githubusercontent.com/trybibby/bibby-latex/main/cloud/bibby_cloud.py"
+    "https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/cloud/bibby_cloud.py"
 )
 
 

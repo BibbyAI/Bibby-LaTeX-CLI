@@ -5,18 +5,18 @@ One command. Working LaTeX, on your machine, in VS Code, and in a Colab or Kaggl
 Read the documentation at [trybibby.com/documentation/bibby-latex](https://trybibby.com/documentation/bibby-latex).
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash
 ```
 
 It asks a few questions. Every one has a default, so you can hold Enter. Or skip them:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash -s -- --yes --profile=standard
+curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash -s -- --yes --profile=standard
 ```
 
 | | |
 | --- | --- |
-| Windows | `irm https://raw.githubusercontent.com/trybibby/bibby-latex/main/windows/install.ps1 \| iex` |
+| Windows | `irm https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/windows/install.ps1 \| iex` |
 | Node already installed | `npx bibby-latex` |
 
 When it finishes, `pdflatex` and `latexmk` are on your PATH, a real document has been compiled as a check, and saving a `.tex` file in VS Code builds the PDF into a tab. Open a new terminal first (or `source` the rc file it names) so the shell sees TeX.
@@ -102,7 +102,7 @@ The companion extension, `trybibby.bibby-latex`, adds a status-bar TeX indicator
 Paste this into the first cell:
 
 ```python
-!curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/cloud/bibby_cloud.py | python3 - --profile standard
+!curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/cloud/bibby_cloud.py | python3 - --profile standard
 ```
 
 Then:
@@ -134,7 +134,7 @@ The same helper works in any notebook VM with `apt-get`. With no apt, it falls b
 macOS, Linux, and WSL. Flags go after `--` when you pipe the installer:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/trybibby/bibby-latex/main/install.sh | bash -s -- --yes --profile=full --scaffold
+curl -fsSL https://raw.githubusercontent.com/BibbyAI/Bibby-LaTeX-CLI/main/install.sh | bash -s -- --yes --profile=full --scaffold
 ```
 
 ```
@@ -228,7 +228,7 @@ make uninstall
 `npx bibby-latex` needs Node 16 or newer. It does not reimplement the installer. On macOS and Linux it execs the shell script, and on Windows it execs `windows/install.ps1`, with the prompts still attached to your terminal.
 
 Documentation: [trybibby.com/documentation/bibby-latex](https://trybibby.com/documentation/bibby-latex).
-Issues: [github.com/trybibby/bibby-latex](https://github.com/trybibby/bibby-latex).
+Issues: [github.com/BibbyAI/Bibby-LaTeX-CLI](https://github.com/BibbyAI/Bibby-LaTeX-CLI).
 
 ## License
 
