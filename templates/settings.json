@@ -1,0 +1,68 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.message.error.show": true,
+  "latex-workshop.message.warning.show": false,
+  "latex-workshop.latex.autoClean.run": "onFailed",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot",
+    "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo",
+    "*.gls", "*.fls", "*.log", "*.fdb_latexmk", "*.snm", "*.synctex(busy)",
+    "*.synctex.gz", "*.nav", "*.vrb", "*.run.xml", "*.bcf"
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1", "-interaction=nonstopmode", "-file-line-error",
+        "-pdf", "-outdir=%OUTDIR%", "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk-xelatex",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1", "-interaction=nonstopmode", "-file-line-error",
+        "-xelatex", "-outdir=%OUTDIR%", "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk-lualatex",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1", "-interaction=nonstopmode", "-file-line-error",
+        "-lualatex", "-outdir=%OUTDIR%", "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    { "name": "pdflatex (latexmk)", "tools": ["latexmk"] },
+    { "name": "xelatex (latexmk)",  "tools": ["latexmk-xelatex"] },
+    { "name": "lualatex (latexmk)", "tools": ["latexmk-lualatex"] }
+  ],
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false,
+    "editor.rulers": [100],
+    "editor.tabSize": 2,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[bibtex]": {
+    "editor.tabSize": 2
+  },
+  "files.associations": {
+    "*.tex": "latex",
+    "*.cls": "latex",
+    "*.sty": "latex"
+  },
+  "bibby.latex.buildOnSave": true,
+  "bibby.latex.autoInstallPackages": true
+}

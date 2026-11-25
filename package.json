@@ -1,0 +1,53 @@
+{
+  "name": "bibby-latex",
+  "version": "1.0.0",
+  "description": "One command, working LaTeX. Local, VS Code, Colab and Kaggle.",
+  "bin": {
+    "bibby-latex": "bin/bibby-latex.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "cloud",
+    "windows",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bash test/smoke.sh",
+    "lint": "shellcheck src/bibby-latex.sh src/lib/*.sh install.sh"
+  },
+  "keywords": [
+    "latex",
+    "tex",
+    "texlive",
+    "tinytex",
+    "miktex",
+    "installer",
+    "vscode",
+    "colab",
+    "kaggle",
+    "latexmk",
+    "bibby"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trybibby/bibby-latex.git"
+  },
+  "homepage": "https://trybibby.com",
+  "bugs": {
+    "url": "https://github.com/trybibby/bibby-latex/issues"
+  },
+  "author": "Bibby",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}

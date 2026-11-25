@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+
+\title{A document that already compiles}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Written by \texttt{bibby-latex}. Delete everything below and start writing.
+\end{abstract}
+
+\section{Math}
+\label{sec:math}
+
+Inline math like $e^{i\pi} + 1 = 0$, and display math:
+
+\begin{equation}
+  \label{eq:objective}
+  \mathcal{L}(\theta) = \mathbb{E}_{x \sim \mathcal{D}}\!\left[ \log \pi_\theta(x) \right].
+\end{equation}
+
+\Cref{eq:objective} is referenced with \texttt{cleveref}, so it stays correct when you move things around.
+
+\section{Tables and figures}
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{lrr}
+    \toprule
+    Method & Accuracy & Time (s) \\
+    \midrule
+    Baseline & 0.81 & 12.4 \\
+    Ours     & 0.93 & 10.1 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Booktabs rules only. No vertical lines.}
+  \label{tab:results}
+\end{table}
+
+\end{document}

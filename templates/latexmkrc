@@ -1,0 +1,17 @@
+# .latexmkrc - sane defaults, written by bibby-latex
+$pdf_mode = 1;                 # 1 = pdflatex, 4 = lualatex, 5 = xelatex
+$out_dir  = 'build';
+$aux_dir  = 'build';
+
+$pdflatex = 'pdflatex -synctex=1 -interaction=nonstopmode -file-line-error %O %S';
+$xelatex  = 'xelatex  -synctex=1 -interaction=nonstopmode -file-line-error %O %S';
+$lualatex = 'lualatex -synctex=1 -interaction=nonstopmode -file-line-error %O %S';
+
+# biber instead of bibtex when a .bcf shows up
+$bibtex_use = 2;
+
+# keep rebuilding until references settle, but do not loop forever
+$max_repeat = 5;
+
+# files latexmk should wipe on `latexmk -c`
+$clean_ext = 'synctex.gz run.xml bbl bcf nav snm vrb fls fdb_latexmk';
